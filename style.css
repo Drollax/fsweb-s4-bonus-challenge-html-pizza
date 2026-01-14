@@ -62,13 +62,14 @@ body{
   flex-direction: row;
   justify-content: space-between;
   text-align: center;
-  padding: 30px 20%;
+  padding: 30px 10%;
+  gap: 30px;
  
 }
 .menu nav a{
   display: flex;
   flex-direction: row;
-  gap: 16px;
+  gap: 10px;
   font-family: "Barlow", sans-serif;
   color: black;
   font-size: 24px;
@@ -285,6 +286,7 @@ color:#FAF7F2
 
 .last-section div{
   background-color: white;
+  border-radius: 20px;
 }
 
 .last-section .title{
