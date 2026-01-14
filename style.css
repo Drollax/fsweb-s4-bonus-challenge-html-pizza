@@ -375,7 +375,11 @@ footer div ul li{
 }
 
 @media(max-width : 768px){
-.menu nav{
+  .top-section h1{
+    max-width: 480px;
+    margin: 0 auto;
+}
+  .menu nav{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
