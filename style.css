@@ -59,7 +59,7 @@ body{
 }
 .menu nav{
   display: flex;
-  flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: space-between;
   text-align: center;
   padding: 30px 10%;
@@ -68,7 +68,6 @@ body{
 }
 .menu nav a{
   display: flex;
-  flex-direction: row;
   gap: 10px;
   font-family: "Barlow", sans-serif;
   color: black;
@@ -229,7 +228,6 @@ border-radius: 20px;
 }
 .alt-menu nav ul{
   display: flex;
-  flex-direction: row;
   list-style: none;
   flex-wrap: nowrap;
   justify-content: space-between;
@@ -253,20 +251,17 @@ border-radius: 20px;
 .alt-menu nav ul li button{
   display: flex;
   align-items: center;
+  flex-wrap: nowrap;
   font-size: 18px;
   line-height: 30px;
   color: black;
   background-color: #FAF7F2;
-  min-width: 180px;
+  min-width: 120px;
+  max-width: 200px;
   width: 100%;
   border-radius: 50px;
   padding: 12px 20px;
   transition: 0.3s;
-}
-
-.alt-menu nav ul li button:hover{
-background-color: black;
-color:#FAF7F2
 }
 
 .last-section {
@@ -369,4 +364,69 @@ footer div ul li{
 
 .son p{
   color: white;
+}
+@media(min-width : 768px){
+  .alt-menu nav ul li button:hover{
+    background-color: black;
+    color:#FAF7F2;
+}
+
+
+}
+
+@media(max-width : 768px){
+.menu nav{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+  padding: 20px 50px;
+  gap: 20px;
+  
+}
+.menu nav a{
+min-width: 130px;
+max-width: 180px;
+align-items: flex-start;
+}
+
+.second-section{
+  flex-direction: column;
+  height: 100%;
+
+}
+
+.second-section .container1{
+  min-width: 300px;
+  width: 90%;
+  
+}
+.second-section .container2{
+  min-width: 300px;
+  width: 90%;
+}
+
+.second-section .container2 .ust{
+  height: 450px;
+}
+.second-section .container2 .alt{
+  height: 450px;
+}
+.second-section .container2 .alt a{
+  margin-top: 30px;
+}
+.second-section .container2 .ust a{
+  margin-top: 30px;
+}
+.second-section .container1 a{
+  margin-top: 30px;
+}
+.alt-menu nav ul{
+  flex-wrap: wrap;
+}
+.last-section{
+  flex-direction: column;
+  max-width: 500px;
+}
+
 }
